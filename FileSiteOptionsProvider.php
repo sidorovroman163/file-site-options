@@ -8,8 +8,6 @@ use SidorovRoman\FileSiteOptions\Repository;
 
 class FileSiteOptionsProvider extends ServiceProvider
 {
-    protected $file_path = "/vendor/FSOptionsStorage/fileSiteOptions.json";
-    
     /**
      * Bootstrap the application services.
      * TEST
@@ -18,9 +16,7 @@ class FileSiteOptionsProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__. '/fileSiteOptions.json' => base_path($this->file_path),
-        ]);
+       
     }
 
     /**
@@ -29,7 +25,7 @@ class FileSiteOptionsProvider extends ServiceProvider
     public function register()
     {
         App::singleton('fsoptions', function () {
-            return new Repository($this->file_path);
+            return new Repository();
         });
     }
 }

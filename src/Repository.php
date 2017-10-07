@@ -16,7 +16,7 @@ class Repository
      */
     public function __construct($file_path)
     {
-        $this->file_path = base_path($file_path);
+        $this->file_path = '../fileSiteOptions.json';
     }
 
     /**
