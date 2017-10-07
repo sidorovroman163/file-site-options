@@ -9,8 +9,8 @@
             "email": "sidorovroman163@gmail.com"
         }
     ],    
-    "minimum-stability": "stable",
-    "version": "1.0.6",
+    "minimum-stability": "dev",
+    "version": "1.0.7",
     "autoload": {
         "psr-4": {
             "SidorovRoman\\FileSiteOptions\\": ""
