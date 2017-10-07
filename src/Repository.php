@@ -14,7 +14,7 @@ class Repository
     /**
      * @return void
      */
-    public function __construct($file_path)
+    public function __construct()
     {
         $this->file_path = '../fileSiteOptions.json';
     }
@@ -35,7 +35,7 @@ class Repository
             
             file_put_contents($this->file_path, json_encode($array));
         } catch (\Exception $ex) {
-            throw new \Exception('Проверьте наличие файла \vendor\FSOptionsStorage\fileSiteOptions.json!');
+            throw new \Exception('Проверьте наличие файла \fileSiteOptions.json!');
         }
     }
 
@@ -53,7 +53,7 @@ class Repository
 
             return array_get($array, $key);
         } catch (\Exception $ex) {
-            throw new \Exception('Проверьте наличие файла \vendor\FSOptionsStorage\fileSiteOptions.json!');
+            throw new \Exception('Проверьте наличие файла \fileSiteOptions.json!');
         }
     }
 
@@ -73,7 +73,7 @@ class Repository
             
             file_put_contents($this->file_path, json_encode($array));
         } catch (\Exception $ex) {
-            throw new \Exception('Проверьте наличие файла \vendor\FSOptionsStorage\fileSiteOptions.json!');
+            throw new \Exception('Проверьте наличие файла \fileSiteOptions.json!');
         }
     }
 }
