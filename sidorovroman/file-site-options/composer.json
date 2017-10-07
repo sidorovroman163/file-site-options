@@ -1,0 +1,20 @@
+{
+    "name": "sidorovroman/file-site-options",
+    "description": "Local site options",
+    "type": "no",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Sidorov",
+            "email": "sidorovroman163@gmail.com"
+        }
+    ],    
+    "minimum-stability": "dev",
+    "version": "1.0.4",
+    "autoload": {
+        "psr-4": {
+            "SidorovRoman\\FileSiteOptions\\": ""
+        }
+    },
+    "require": {}
+}
